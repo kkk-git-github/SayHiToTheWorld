@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subtraction</title>
+    </head>
+    <body>
+        <a href="main.html">Back to main page</a>
+        <label>Minuend</label>
+        <input placeholder = "Minuend" id="first"><br>
+        <label>Subtrahend</label>
+        <input placeholder = "Subtrahend" id="second">
+        <button type="button" id="calculate" onclick="Result()">Difference</button>
+        <p id="result"></p>
+        <script>
+            function Setup() {
+                parseFloat(document.getElementById("first").value);
+                parseFloat(document.getElementById("second").value);
+            }
+            function Calculation(x, y) {
+                Setup()
+                return parseFloat(x - y);
+            }
+            function Result() {
+                document.getElementById("result").innerHTML = Calculation(parseFloat(document.getElementById("first").value), parseFloat(document.getElementById("second").value));           
+                bruh()
+            }
+            function bruh() {
+            console.log(document.getElementById("first").value);
+            console.log(document.getElementById("second").value);
+            console.log(document.getElementById("first").value - document.getElementById("second").value);
+            console.log(parseFloat(document.getElementById("first").value) - parseFloat(document.getElementById("second").value));
+            }
+        </script>
+    </body>
+</html>

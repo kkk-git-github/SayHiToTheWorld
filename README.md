@@ -1,1 +1,1 @@
-Random number generator
+Calculator

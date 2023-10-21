@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random number</title>
+</head>
+<!---->
+<body>
+<p>Input start of a number</p>  
+<input placeholder="start" id="start">
+<p> Input end of a number </p> 
+<input placeholder="end" id="end">
+
+<button id="resultReturner" type="button">Generate</button>
+<p>The random number is </p>
+<p id="result"></p>
+<script>
+
+parseFloat(document.getElementById("start"))
+parseFloat(document.getElementById("end"))
+function getRandomArbitrary(min, max) {
+  return parseFloat(Math.random() * (max - min) + min);
+}
+function ReturnNumber(x) {
+  Comparer(document.getElementById("start"), document.getElementById("end"))
+  x = getRandomArbitrary(document.getElementById("start"), document.getElementById("end"))
+  return parseFloat(x);
+}
+function Comparer(maxEx, minEx) {
+  if ((maxEx) >= (minEx)) {
+    
+  }
+  if (((maxEx) <= 0) || (minEx <= 0)) {
+  }
+};/*alo alo*/
+
+var Output = ReturnNumber(Output);
+parseFloat(Output);
+
+
+function ReturnVar() {
+  parseFloat(Output);
+  document.getElementById("result").innerHTML = Output;
+  
+}
+
+document.getElementById("resultReturner").addEventListener("click", function(){ReturnVar()});
+
+
+
+/**/
+
+
+
+</script>  
+</body>
+</html>
