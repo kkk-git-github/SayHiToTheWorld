@@ -1,2 +1,1 @@
-# SayHiToTheWorld
-Hi!!!
+Random number generator

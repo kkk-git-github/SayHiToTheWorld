@@ -1,8 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <p>
-          Hello World!  
-        </p>
-    </body>
+<head>
+<title>Random number</title>
+</head>
+<!--hé lô-->
+<body>
+<p>Input start of a number</p>  
+<input placeholder="start" id="start">
+<p> Input end of a number </p> 
+<input placeholder="end" id="end">
+
+<button id="resultReturner" type="button">Generate</button>
+<p>The random number is </p>
+<p id="result"></p>
+<script>
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+function ReturnNumber(x) {
+  return x = getRandomArbitrary(document.getElementById("start"), document.getElementById("end"))
+}
+function Comparer(maxEx, minEx) {
+  if ((maxEx) >= (minEx)) {
+    throw "Start > End";
+  }
+  if (((maxEx) <= 0) || (minEx <= 0)) {
+    throw "Invalid Value";
+  }
+};/*Để tên thành Retturn thôi*/
+function Setup() {
+  var Output = null;
+  ReturnNumber(Output);
+}
+
+function ReturnVar() {
+  Setup()
+  parseInt(Output);
+  document.getElementById("resultReturner").innerHTML = Output;
+  
+}
+window.addEventListener("load", Setup(), false)
+/* k cần bt */
+
+
+
+</script>  
+</body>
 </html>
