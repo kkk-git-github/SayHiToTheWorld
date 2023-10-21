@@ -3,7 +3,7 @@
 <head>
 <title>Random number</title>
 </head>
-<!--hé lô-->
+<!---->
 <body>
 <p>Input start of a number</p>  
 <input placeholder="start" id="start">
@@ -14,33 +14,40 @@
 <p>The random number is </p>
 <p id="result"></p>
 <script>
+
+parseFloat(document.getElementById("start"))
+parseFloat(document.getElementById("end"))
 function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
+  return parseFloat(Math.random() * (max - min) + min);
 }
 function ReturnNumber(x) {
-  return x = getRandomArbitrary(document.getElementById("start"), document.getElementById("end"))
+  Comparer(document.getElementById("start"), document.getElementById("end"))
+  x = getRandomArbitrary(document.getElementById("start"), document.getElementById("end"))
+  return parseFloat(x);
 }
 function Comparer(maxEx, minEx) {
   if ((maxEx) >= (minEx)) {
-    throw "Start > End";
+    
   }
   if (((maxEx) <= 0) || (minEx <= 0)) {
-    throw "Invalid Value";
   }
-};/*Để tên thành Retturn thôi*/
-function Setup() {
-  var Output = null;
-  ReturnNumber(Output);
-}
+};/*alo alo*/
+
+var Output = ReturnNumber(Output);
+parseFloat(Output);
+
 
 function ReturnVar() {
-  Setup()
-  parseInt(Output);
-  document.getElementById("resultReturner").innerHTML = Output;
+  parseFloat(Output);
+  document.getElementById("result").innerHTML = Output;
   
 }
-window.addEventListener("load", Setup(), false)
-/* k cần bt */
+
+document.getElementById("resultReturner").addEventListener("click", function(){ReturnVar()});
+
+
+
+/**/
 
 
 
